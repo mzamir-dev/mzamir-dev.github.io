@@ -1,1 +1,1108 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Muhammad Zamir | PhD Researcher</title>
+
+<meta name="description"
+      content="Muhammad Zamir — PhD Researcher in Computer Vision and Multimodal Video Understanding at UESTC.">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Roboto, Helvetica, Arial, sans-serif;
+        color: #24292f;
+        background: #ffffff;
+        line-height: 1.7;
+    }
+
+    a {
+        color: #0969da;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* -----------------------------
+       LAYOUT
+    ----------------------------- */
+
+    .page {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* -----------------------------
+       LEFT PROFILE PANEL
+    ----------------------------- */
+
+    .sidebar {
+        width: 310px;
+        min-height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 55px 30px;
+
+        background: #fafafa;
+        border-right: 1px solid #eaecef;
+
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 190px;
+        height: 190px;
+
+        border-radius: 50%;
+        object-fit: cover;
+
+        border: 1px solid #e1e4e8;
+        margin-bottom: 25px;
+    }
+
+    .name {
+        margin: 0;
+        font-size: 27px;
+        font-weight: 650;
+        letter-spacing: -0.5px;
+    }
+
+    .role {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #57606a;
+    }
+
+    .university {
+        margin-top: 3px;
+        font-size: 15px;
+        color: #57606a;
+    }
+
+    .location {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #656d76;
+    }
+
+    /* -----------------------------
+       PROFILE BUTTONS
+    ----------------------------- */
+
+    .profile-links {
+        display: flex;
+        gap: 8px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 7px 14px;
+
+        border: 1px solid #d0d7de;
+        border-radius: 6px;
+
+        background: #ffffff;
+        color: #24292f;
+
+        font-size: 13px;
+        font-weight: 500;
+
+        transition: 0.2s;
+    }
+
+    .profile-button:hover {
+        background: #f3f4f6;
+        text-decoration: none;
+    }
+
+    .sidebar-footer {
+        margin-top: auto;
+        padding-top: 40px;
+
+        font-size: 12px;
+        color: #8c959f;
+    }
+
+    /* -----------------------------
+       MAIN CONTENT
+    ----------------------------- */
+
+    .content {
+        margin-left: 310px;
+        width: calc(100% - 310px);
+
+        max-width: 1050px;
+
+        padding: 65px 75px 100px;
+    }
+
+    section {
+        margin-bottom: 70px;
+        scroll-margin-top: 30px;
+    }
+
+    h2 {
+        margin: 0 0 25px;
+
+        font-size: 25px;
+        font-weight: 600;
+
+        color: #24292f;
+
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eaecef;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 15px;
+        color: #444c56;
+    }
+
+    /* -----------------------------
+       INTRO
+    ----------------------------- */
+
+    .intro {
+        margin-bottom: 70px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+        margin: 0 0 10px;
+        font-weight: 650;
+    }
+
+    .intro-subtitle {
+        color: #57606a;
+        font-size: 17px;
+    }
+
+    /* -----------------------------
+       RESEARCH INTERESTS
+    ----------------------------- */
+
+    .research-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin-top: 20px;
+    }
+
+    .research-tag {
+        padding: 5px 12px;
+
+        background: #f6f8fa;
+        border: 1px solid #d8dee4;
+
+        border-radius: 5px;
+
+        font-size: 13px;
+        color: #444c56;
+    }
+
+    /* -----------------------------
+       EXPERIENCE
+    ----------------------------- */
+
+    .experience-item {
+        position: relative;
+
+        padding-left: 25px;
+        margin-bottom: 35px;
+
+        border-left: 2px solid #d8dee4;
+    }
+
+    .experience-item::before {
+        content: "";
+
+        position: absolute;
+
+        left: -6px;
+        top: 7px;
+
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+
+        background: #0969da;
+    }
+
+    .experience-title {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .experience-date {
+        display: block;
+
+        margin: 3px 0 8px;
+
+        font-size: 13px;
+        color: #656d76;
+    }
+
+    .experience-description {
+        margin: 0;
+
+        font-size: 14px;
+        color: #57606a;
+    }
+
+    /* -----------------------------
+       PUBLICATIONS
+    ----------------------------- */
+
+    .publication {
+        margin-bottom: 38px;
+    }
+
+    .publication-title {
+        margin: 0 0 7px;
+
+        font-size: 17px;
+        line-height: 1.5;
+
+        font-weight: 600;
+    }
+
+    .publication-meta {
+        font-size: 14px;
+        color: #57606a;
+
+        margin-bottom: 5px;
+    }
+
+    .publication-authors {
+        font-size: 14px;
+        color: #656d76;
+
+        margin-bottom: 12px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .button {
+        display: inline-block;
+
+        padding: 5px 13px;
+
+        border-radius: 5px;
+
+        font-size: 12px;
+        font-weight: 500;
+
+        text-decoration: none;
+    }
+
+    .paper-button {
+        background: #0969da;
+        color: white;
+    }
+
+    .paper-button:hover {
+        background: #0757b5;
+        text-decoration: none;
+    }
+
+    .code-button {
+        background: #24292f;
+        color: white;
+    }
+
+    .code-button:hover {
+        background: #424a53;
+        text-decoration: none;
+    }
+
+    .coming-soon {
+        background: #f6f8fa;
+        color: #57606a;
+        border: 1px solid #d0d7de;
+    }
+
+    /* -----------------------------
+       AWARDS
+    ----------------------------- */
+
+    .award {
+        margin-bottom: 28px;
+    }
+
+    .award-title {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .award-description {
+        font-size: 14px;
+        color: #57606a;
+    }
+
+    /* -----------------------------
+       SKILLS
+    ----------------------------- */
+
+    .skill-row {
+        margin-bottom: 14px;
+        font-size: 14px;
+        color: #57606a;
+    }
+
+    .skill-row strong {
+        color: #24292f;
+    }
+
+    /* -----------------------------
+       CONTACT
+    ----------------------------- */
+
+    .contact {
+        text-align: center;
+
+        padding: 40px 20px;
+
+        border-top: 1px solid #eaecef;
+    }
+
+    .contact-buttons {
+        margin-top: 20px;
+    }
+
+    /* -----------------------------
+       MOBILE
+    ----------------------------- */
+
+    @media (max-width: 850px) {
+
+        .page {
+            display: block;
+        }
+
+        .sidebar {
+            position: relative;
+
+            width: 100%;
+            min-height: auto;
+
+            padding: 40px 20px;
+
+            border-right: none;
+            border-bottom: 1px solid #eaecef;
+        }
+
+        .sidebar-footer {
+            margin-top: 25px;
+        }
+
+        .content {
+            margin-left: 0;
+            width: 100%;
+
+            padding: 45px 25px 70px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .intro h1 {
+            font-size: 28px;
+        }
+
+        section {
+            margin-bottom: 55px;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .content {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .publication-title {
+            font-size: 16px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="page">
+
+```
+<!-- =========================================
+     LEFT PROFILE SIDEBAR
+========================================== -->
+
+<aside class="sidebar">
+
+    <!-- Replace this image with your photo -->
+    <img
+        src="assets/profile.jpg"
+        alt="Muhammad Zamir"
+        class="profile-image"
+    >
+
+    <h1 class="name">Muhammad Zamir</h1>
+
+    <div class="role">
+        PhD Researcher
+    </div>
+
+    <div class="university">
+        University of Electronic Science and<br>
+        Technology of China (UESTC)
+    </div>
+
+    <div class="location">
+        📍 Chengdu, China
+    </div>
+
+    <div class="profile-links">
+
+        <a
+            class="profile-button"
+            href="https://github.com/mzamir-dev"
+            target="_blank"
+        >
+            GitHub
+        </a>
+
+        <a
+            class="profile-button"
+            href="mailto:YOUR_EMAIL@example.com"
+        >
+            Email
+        </a>
+
+        <a
+            class="profile-button"
+            href="https://www.linkedin.com/in/muhammad-zamir-265a41174/"
+            target="_blank"
+        >
+            LinkedIn
+        </a>
+
+    </div>
+
+    <div class="sidebar-footer">
+        Computer Vision · Multimodal Learning
+    </div>
+
+</aside>
+
+
+<!-- =========================================
+     MAIN CONTENT
+========================================== -->
+
+<main class="content">
+
+    <!-- INTRO -->
+
+    <div class="intro">
+
+        <h1>Muhammad Zamir</h1>
+
+        <div class="intro-subtitle">
+            PhD Researcher in Computer Vision and Multimodal Video Understanding
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         ABOUT ME
+    ====================================== -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a PhD Researcher specializing in
+            <strong>Computer Vision and Multimodal Video Understanding</strong>,
+            with a research focus on <strong>object detection, feature
+            representation, and scene understanding</strong> from video.
+            My work explores the learning and application of visual and
+            multimodal representations to develop robust and generalizable
+            systems for understanding complex real-world visual environments.
+        </p>
+
+        <p>
+            Alongside my research, I bring <strong>3+ years of industry
+            experience in software development</strong>, with a strong
+            focus on system development using <strong>Django and
+            FastAPI</strong>. I have hands-on experience with
+            <strong>MySQL, PostgreSQL, Docker, CI/CD, Git, AWS, and
+            Azure</strong>, developing and deploying scalable software
+            solutions.
+        </p>
+
+        <p>
+            I am passionate about advancing intelligent visual systems
+            through rigorous research, practical experimentation, and
+            interdisciplinary collaboration. I am open to
+            <strong>research collaborations, academic opportunities,
+            and industry projects</strong> in computer vision,
+            multimodal learning, video understanding, and related areas.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         RESEARCH INTERESTS
+    ====================================== -->
+
+    <section id="research">
+
+        <h2>Research Interests</h2>
+
+        <div class="research-list">
+
+            <span class="research-tag">Computer Vision</span>
+            <span class="research-tag">Multimodal Learning</span>
+            <span class="research-tag">Video Understanding</span>
+            <span class="research-tag">Object Detection</span>
+            <span class="research-tag">Feature Representation</span>
+            <span class="research-tag">Scene Understanding</span>
+            <span class="research-tag">UAV Intelligence</span>
+            <span class="research-tag">Self-Supervised Learning</span>
+            <span class="research-tag">Deep Learning</span>
+            <span class="research-tag">Robust AI</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         EXPERIENCE
+    ====================================== -->
+
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+
+        <div class="experience-item">
+
+            <h3 class="experience-title">
+                🔬 Researcher —
+                <a href="https://www.icdmlab.com/" target="_blank">
+                    ICDM Lab
+                </a>
+            </h3>
+
+            <span class="experience-date">
+                September 2024 – Present
+            </span>
+
+            <p class="experience-description">
+                Research activities in computer vision, deep learning,
+                video understanding, and intelligent visual systems.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3 class="experience-title">
+                💻 Python Developer —
+                <a href="https://www.99technologies.com/" target="_blank">
+                    99 Technologies
+                </a>
+            </h3>
+
+            <span class="experience-date">
+                April 2024 – February 2025
+            </span>
+
+            <p class="experience-description">
+                Worked on Python-based software development and
+                IoT-based systems.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3 class="experience-title">
+                💻 Python Developer —
+                <a href="https://joyngroup.com/" target="_blank">
+                    Joyn Group
+                </a>
+            </h3>
+
+            <span class="experience-date">
+                December 2022 – April 2024
+            </span>
+
+            <p class="experience-description">
+                Developed and maintained Python-based applications
+                and backend systems.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3 class="experience-title">
+                💻 Full-Stack Developer —
+                <a href="https://rev9solutions.com/" target="_blank">
+                    Rev9Solutions
+                </a>
+            </h3>
+
+            <span class="experience-date">
+                August 2022 – December 2022
+            </span>
+
+            <p class="experience-description">
+                Worked on full-stack web application development
+                and backend systems.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3 class="experience-title">
+                💻 Full-Stack Developer —
+                Nafess Solutions
+            </h3>
+
+            <span class="experience-date">
+                December 2021 – June 2022
+            </span>
+
+            <p class="experience-description">
+                Full-stack development involving web applications,
+                backend services, and database systems.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PUBLICATIONS
+    ====================================== -->
+
+    <section id="publications">
+
+        <h2>Publications</h2>
+
+
+        <!-- PUBLICATION 1 -->
+
+        <div class="publication">
+
+            <h3 class="publication-title">
+                Blur-guided motion and spatio-temporal swarm graph
+                modeling for UAV intent understanding
+            </h3>
+
+            <div class="publication-meta">
+                <strong>Knowledge-Based Systems</strong>
+                · Elsevier · 2026
+                · Impact Factor: 8
+            </div>
+
+            <div class="publication-authors">
+                M. Zamir, Z. Ting, F. Zhou, M. S. Khan
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="button paper-button"
+                    href="https://doi.org/10.1016/j.knosys.2026.116895"
+                    target="_blank"
+                >
+                    Paper
+                </a>
+
+                <a
+                    class="button code-button"
+                    href="https://github.com/mzamir-dev/UAV-Intent-Understanding"
+                    target="_blank"
+                >
+                    Code
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PUBLICATION 2 -->
+
+        <div class="publication">
+
+            <h3 class="publication-title">
+                PalmSecGANNet: Deep learning-based secure palmprint
+                recognition with cancelable templates
+            </h3>
+
+            <div class="publication-meta">
+                <strong>Pattern Recognition</strong>
+                · Elsevier · 2026
+                · Impact Factor: 9
+            </div>
+
+            <div class="publication-authors">
+                M. S. Khan, T. Zhong, H. Li, F. Zhou, M. Zamir
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="button paper-button"
+                    href="https://doi.org/10.1016/j.patcog.2026.114476"
+                    target="_blank"
+                >
+                    Paper
+                </a>
+
+                <a
+                    class="button coming-soon"
+                    href="https://github.com/mzamir-dev"
+                    target="_blank"
+                    title="Code coming soon"
+                >
+                    Code Coming Soon
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PUBLICATION 3 -->
+
+        <div class="publication">
+
+            <h3 class="publication-title">
+                A uni-factor cancelable palmprint recognition scheme
+                with deep sight network and key-indexed template
+                encoding mechanism
+            </h3>
+
+            <div class="publication-meta">
+                <strong>Information Sciences</strong>
+                · Elsevier · 2026
+                · Impact Factor: 6
+            </div>
+
+            <div class="publication-authors">
+                M. S. Khan, T. Zhong, H. Li, F. Zhou, M. Zamir
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="button paper-button"
+                    href="https://doi.org/10.1016/j.ins.2026.123440"
+                    target="_blank"
+                >
+                    Paper
+                </a>
+
+                <a
+                    class="button coming-soon"
+                    href="https://github.com/mzamir-dev"
+                    target="_blank"
+                    title="Code coming soon"
+                >
+                    Code Coming Soon
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PUBLICATION 4 -->
+
+        <div class="publication">
+
+            <h3 class="publication-title">
+                Face detection &amp; recognition from images &amp;
+                videos based on CNN &amp; Raspberry Pi
+            </h3>
+
+            <div class="publication-meta">
+                <strong>Computation</strong>
+                · MDPI · 2022
+                · Impact Factor: 2.6
+            </div>
+
+            <div class="publication-authors">
+                M. Zamir, N. Ali, A. Naseem, A. Ahmed Frasteen,
+                B. Zafar, M. Assam, et al.
+            </div>
+
+            <div class="buttons">
+
+                <a
+                    class="button paper-button"
+                    href="https://doi.org/10.3390/computation10090148"
+                    target="_blank"
+                >
+                    Paper
+                </a>
+
+                <a
+                    class="button coming-soon"
+                    href="https://github.com/mzamir-dev"
+                    target="_blank"
+                    title="Code coming soon"
+                >
+                    Code Coming Soon
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         HONORS & AWARDS
+    ====================================== -->
+
+    <section id="awards">
+
+        <h2>Honors &amp; Awards</h2>
+
+
+        <div class="award">
+
+            <div class="award-title">
+                🏆 PhD — 
+                <a
+                    href="https://www.chinesescholarshipcouncil.com/"
+                    target="_blank"
+                >
+                    Chinese Government Scholarship (CSC)
+                </a>
+            </div>
+
+            <div class="award-description">
+                Chinese Government Scholarship recipient for PhD
+                studies in China.
+            </div>
+
+        </div>
+
+
+        <div class="award">
+
+            <div class="award-title">
+                🏆 MS Software Engineering —
+                <a
+                    href="https://peef.pk/ajk-scholarship-program/"
+                    target="_blank"
+                >
+                    PEEF Scholarship
+                </a>
+            </div>
+
+            <div class="award-description">
+                PEEF scholarship recipient during MS Software
+                Engineering studies.
+            </div>
+
+        </div>
+
+
+        <div class="award">
+
+            <div class="award-title">
+                🏆 BSSE Scholarship —
+                <a
+                    href="https://must.edu.pk/"
+                    target="_blank"
+                >
+                    AJK National Merit-Based Scholarship
+                </a>
+            </div>
+
+            <div class="award-description">
+                Merit-based scholarship awarded during BS Software
+                Engineering studies.
+            </div>
+
+        </div>
+
+
+        <div class="award">
+
+            <div class="award-title">
+                🏅 Registered Engineer —
+                <a
+                    href="https://www.pec.org.pk/"
+                    target="_blank"
+                >
+                    Pakistan Engineering Council (PEC)
+                </a>
+            </div>
+
+            <div class="award-description">
+                Registered Engineer with the Pakistan Engineering
+                Council (PEC), the statutory regulatory body for
+                engineering professionals in Pakistan.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         TECHNICAL SKILLS
+    ====================================== -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-row">
+            <strong>Programming:</strong>
+            Python, JavaScript, SQL
+        </div>
+
+        <div class="skill-row">
+            <strong>Frameworks:</strong>
+            Django, FastAPI
+        </div>
+
+        <div class="skill-row">
+            <strong>Databases:</strong>
+            MySQL, PostgreSQL
+        </div>
+
+        <div class="skill-row">
+            <strong>DevOps &amp; Cloud:</strong>
+            Docker, CI/CD, Git, AWS, Azure
+        </div>
+
+        <div class="skill-row">
+            <strong>Research:</strong>
+            Computer Vision, Deep Learning, Multimodal Learning,
+            Video Understanding, Object Detection,
+            Representation Learning
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CONTACT
+    ====================================== -->
+
+    <div class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am open to <strong>research collaborations,
+            academic opportunities, and industry projects</strong>
+            in computer vision, multimodal learning,
+            video understanding, and related areas.
+        </p>
+
+        <div class="profile-links contact-buttons">
+
+            <a
+                class="profile-button"
+                href="https://github.com/mzamir-dev"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+            <a
+                class="profile-button"
+                href="https://www.linkedin.com/in/muhammad-zamir-265a41174/"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                class="profile-button"
+                href="mailto:YOUR_EMAIL@example.com"
+            >
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+```
+
+</div>
+
+</body>
+</html>
