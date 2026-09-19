@@ -44,9 +44,9 @@
     ----------------------------- */
 
     .page {
-        display: flex;
-        min-height: 100vh;
-    }
+    min-height: 100vh;
+    padding-left: 310px;
+}
 
     /* -----------------------------
        LEFT PROFILE PANEL
@@ -154,16 +154,27 @@
     /* -----------------------------
        MAIN CONTENT
     ----------------------------- */
-
-    .content {
-        margin-left: 310px;
-        width: calc(100% - 310px);
-
+   .page > section,
+    .page > .contact {
+        width: 100%;
         max-width: 1050px;
-
-        padding: 65px 75px 100px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
-
+    
+    .page > section:first-of-type {
+        padding-top: 65px;
+    }
+    
+    .page > section {
+        margin-bottom: 70px;
+        scroll-margin-top: 30px;
+    }
+    
+    .page > .contact {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    } 
     section {
         margin-bottom: 70px;
         scroll-margin-top: 30px;
@@ -412,64 +423,91 @@
        MOBILE
     ----------------------------- */
 
-    @media (max-width: 850px) {
+   @media (max-width: 850px) {
 
-        .page {
-            display: block;
-        }
-
-        .sidebar {
-            position: relative;
-
-            width: 100%;
-            min-height: auto;
-
-            padding: 40px 20px;
-
-            border-right: none;
-            border-bottom: 1px solid #eaecef;
-        }
-
-        .sidebar-footer {
-            margin-top: 25px;
-        }
-
-        .content {
-            margin-left: 0;
-            width: 100%;
-
-            padding: 45px 25px 70px;
-        }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-        }
-
-        .intro h1 {
-            font-size: 28px;
-        }
-
-        section {
-            margin-bottom: 55px;
-        }
+    .page {
+        padding-left: 0;
     }
 
-    @media (max-width: 500px) {
+    .sidebar {
+        position: relative;
 
-        .content {
-            padding-left: 18px;
-            padding-right: 18px;
-        }
+        width: 100%;
+        min-height: auto;
 
-        h2 {
-            font-size: 22px;
-        }
+        padding: 40px 20px;
 
-        .publication-title {
-            font-size: 16px;
-        }
+        border-right: none;
+        border-bottom: 1px solid #eaecef;
     }
+
+    .sidebar-footer {
+        margin-top: 25px;
+    }
+
+    .page > section,
+    .page > .contact {
+        width: 100%;
+        max-width: none;
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .page > section:first-of-type {
+        padding-top: 45px;
+    }
+
+    .page > section {
+        margin-bottom: 55px;
+    }
+
+    .page > .contact {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .page > section,
+    .page > .contact {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .publication-title {
+        font-size: 16px;
+    }
+
+    .publication-meta,
+    .publication-authors,
+    .experience-description,
+    .award-description,
+    .skill-row {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+}
+
+   
 </style>
 ```
 
@@ -1054,7 +1092,6 @@
 
     </div>
 
-</main>
 ```
 
 </div>
